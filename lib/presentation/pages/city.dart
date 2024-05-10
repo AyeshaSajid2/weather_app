@@ -5,14 +5,14 @@ import 'package:weather_app/application/theme/colors.dart';
 import 'package:weather_app/application/theme/style.dart';
 
 class City extends StatefulWidget {
-  City({Key key}) : super(key: key);
+  City({required Key key}) : super(key: key);
 
   @override
   _CityState createState() => _CityState();
 }
 
 class _CityState extends State<City> {
-  String cityName;
+  late String cityName;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

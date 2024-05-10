@@ -11,11 +11,11 @@ class Locations extends StatefulWidget {
 }
 
 class _LocationsState extends State<Locations> {
-  int temperature;
-  int condition;
-  String cityName;
-  String weatherIcon;
-  String tempIcon;
+  late int temperature;
+  late int condition;
+  late String cityName;
+  late String weatherIcon;
+  late String tempIcon;
   WeatherModel weatherModel = WeatherModel();
 
   @override

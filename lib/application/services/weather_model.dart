@@ -20,7 +20,7 @@ class WeatherModel {
 
     /// Get location data
     NetworkData networkHelper = NetworkData(
-        '$weatherApiUrl?lat=${location.latitude}&lon=${location.longitide}&appid=$apiKey&units=metric');
+        '$weatherApiUrl?lat=${location.latitude}&lon=${location.longitude}&appid=$apiKey&units=metric');
     var weatherData = await networkHelper.getData();
     return weatherData;
   }
